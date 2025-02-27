@@ -1,0 +1,179 @@
+@import "reset.css";
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+*{
+    z-index: 1;
+}
+
+/* Хэдер */
+
+.header{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_list{
+    display: flex;
+    gap: 116px;
+    color: white;
+    font-size: 16px;
+    font-family: OpenSans-Bold;
+}
+
+.header_list a{
+    text-decoration: none;
+    color: white;
+}
+
+.dots{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 40%;
+    margin-left: 95vw;
+    height: 0;
+}
+
+.dots img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Интро */
+
+.intro{
+    background-color: black;
+    background-image: url(../img/introbg.png);
+    color: white;
+    height: 880.79px;
+    width: 100%;
+}
+
+.intro_contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.intro_contents h3{
+    font-size: 80px;
+    font-family: OpenSans-Bold;
+}
+
+.intro_contents h5{
+    font-size: 48px;
+    font-family: OpenSans-Regular;
+}
+
+.intro_contents button{
+    font-size: 32px;
+    font-family: OpenSans-Bold;
+    width: 321px;
+    height: 88px;
+    /* Кнопка */
+    background-color: #140D52;
+    border: solid #3324B6;
+    border-top: 3px;
+    border-left: 3px;
+    border-radius: 100px;
+    margin: 50px 0px 50px 0px;
+    transition-duration: 0.1s;
+    /* Убираем эффект гиперссылки */
+    text-decoration: none;
+    color: white;
+}
+
+/* Наводка на кнопку "Начать" */
+.intro_contents button:hover{
+    background-color: #1b1170;
+    border: solid #4434da;
+    border-top: 3px;
+    border-left: 3px;
+    border-radius: 100px;
+}
+
+.intro_contents p{
+    font-size: 24px;
+    font-family: OpenSans-Regular;
+}
+
+
+.about_project{
+    background-color: black;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 50px 150px 0px 150px;
+}
+
+.about__text{
+    margin-top: 50px;
+    font-family: OpenSans-Regular;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about_project h3{
+    font-size: 40px;
+    font-family: OpenSans-Bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_project-craters{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: OpenSans-Regular;
+}
+
+.about_project-cr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.about__text2{
+    margin-top: 25px;
+    font-family: OpenSans-Regular;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.team{
+    margin-top: 50px;
+    display: flex;
+    gap: 150px;
+}
+
+.team__card img{
+    width: 458px;
+    height: 623px;
+    background-color: black;
+    border: #4434da solid 5px;
+    border-radius: 15px;
+}

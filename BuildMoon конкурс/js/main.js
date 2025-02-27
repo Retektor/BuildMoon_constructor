@@ -1,0 +1,16 @@
+population = 0;
+document.getElementById("population").innerHTML = population;
+electricity = 0;
+document.getElementById("electricity").innerHTML = electricity;
+water = 0;
+document.getElementById("water").innerHTML = water;
+food = 0;
+document.getElementById("food").innerHTML = food;
+food = 0;
+document.getElementById("food").innerHTML = food;
+danger = 0;
+document.getElementById("danger").innerHTML = danger;
+material = 0;
+document.getElementById("material").innerHTML = material;
+regolith = 0;
+document.getElementById("regolith").innerHTML = regolith;

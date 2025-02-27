@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.block-info-right {
+    background-color: #070031;
+    width: 300px;
+    height: 100vh;
+    justify-self: end;
+    position: fixed;
+    border-top-left-radius: 50px;
+}
+
+.block-info-left {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.block-info {
+    display: grid;
+}
+
+.info_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 0 0 0;
+}
+
+.info_list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info_list-txt {
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sub-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 0 20px;
+    opacity: 0;
+    /* Начальное смещение вверх */
+    transform: translateY(-20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sub-items p {
+    margin: 0;
+    color: wheat;
+}
+
+/* Анимация появления */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация исчезновения */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Класс для анимации появления */
+.sub-items.visible {
+    display: flex;
+    animation: slideIn 0.3s ease forwards;
+}
+
+/* Класс для анимации исчезновения */
+.sub-items.hidden {
+    animation: slideOut 0.3s ease forwards;
+}
